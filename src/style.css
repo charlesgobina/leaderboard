@@ -1,0 +1,66 @@
+
+h1 {
+  text-align: center;
+}
+
+.contain {
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 992px) {
+  .contain {
+    margin-left: 300px;
+    margin-right: 300px;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
+.rec-head {
+  align-items: center;
+}
+
+.rec-scores {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.score-details {
+  margin: 0 auto;
+}
+
+.score-details li {
+  padding: 10px 0;
+}
+
+.score-details:nth-child(even) {
+  background-color: rgb(156, 156, 156);
+}
+
+button[type="button"] {
+  height: 20%;
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+form {
+  flex-direction: column;
+}
+
+form input[type="text"] {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+form button[type="submit"] {
+  align-self: flex-end;
+  padding: 5px;
+}
+
+.d-flex {
+  display: flex;
+}
