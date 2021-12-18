@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Leaderboard</title>
 <script defer src="/index.bundle.js"></script></head>
 <body>
-    <h1>I love Webpack</h1>
+<h1>Leaderboard</h1>
+<div class="contain">
+    <section>
+        <div class="rec-head d-flex">
+            <h2>Recent scores</h2>
+            <button id="refresh" type="button">Refresh</button>
+        </div>
+        <div class="rec-scores">
+            <ul class="score-details">   
+            </ul>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h2>Add a scores</h2>
+            <form id="scan" class="d-flex">
+                <input id="name" type="text" placeholder="Your Name">
+                <input id="score" type="number" min="1" max="100" placeholder="Your Score">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</div>
 </body>
 </html>

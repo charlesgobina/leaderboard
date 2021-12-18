@@ -8,57 +8,27 @@
 </head>
 <body>
 <h1>Leaderboard</h1>
-<div class="contain d-flex">
+<div class="contain">
     <section>
         <div class="rec-head d-flex">
             <h2>Recent scores</h2>
-            <button type="button">Refresh</button>
+            <button id="refresh" type="button">Refresh</button>
         </div>
         <div class="rec-scores">
-            <ul class="score-details">
-                <li>
-                    <span>Name:</span>
-                    <span>100</span>
-                </li>
-                <li>
-                    <span>Name:</span>
-                    <span>20</span>
-                </li>
-                <li>
-                    <span>Name:</span>
-                    <span>50</span>
-                </li>
-                <li>
-                    <span>Name:</span>
-                    <span>78</span>
-                </li>
-                <li>
-                    <span>Name:</span>
-                    <span>125</span>
-                </li>
-                <li>
-                    <span>Name:</span>
-                    <span>77</span>
-                </li>
-                <li>
-                    <span>Name:</span>
-                    <span>42</span>
-                </li>
+            <ul class="score-details">   
             </ul>
         </div>
     </section>
     <section>
         <div>
             <h2>Add a scores</h2>
-            <form class="d-flex">
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Name">
+            <form id="scan" class="d-flex">
+                <input id="name" type="text" placeholder="Your Name">
+                <input id="score" type="number" min="1" max="100" placeholder="Your Score">
                 <button type="submit">Submit</button>
             </form>
         </div>
     </section>
 </div>
-
-
 </body>
 </html>

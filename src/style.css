@@ -4,14 +4,18 @@ h1 {
 }
 
 .contain {
+  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
 
 @media screen and (min-width: 992px) {
   .contain {
-    margin-left: 300px;
-    margin-right: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+    margin-left: 200px;
+    margin-right: 200px;
     justify-content: space-evenly;
     flex-direction: row;
   }
@@ -47,13 +51,19 @@ ul {
   list-style: none;
 }
 
+@media screen and (min-width: 992px) {
+  form {
+    width: 40%;
+  }
+}
+
 form {
   flex-direction: column;
+  gap: 10px;
 }
 
 form input[type="text"] {
   padding: 5px;
-  margin-bottom: 10px;
 }
 
 form button[type="submit"] {
