@@ -6,7 +6,7 @@ export default class GameManager {
     this.score = score;
   }
 
-  async addScore(user, score) {
+  addScore = async (user, score) => {
     const data = { user, score };
     const response = await fetch(this.gameUrl, {
       method: 'POST',
@@ -20,7 +20,7 @@ export default class GameManager {
     return finalResponse;
   }
 
-  async displayScore() {
+   displayScore = async () => {
     const response = await fetch(this.gameUrl, {
       method: 'GET',
       mode: 'cors',
@@ -35,7 +35,7 @@ export default class GameManager {
     return null;
   }
 
-  static renderer(data, container) {
+  static renderer = (data, container) => {
     let parent = '';
     data.result.forEach((resu) => {
       parent += `

@@ -7,7 +7,7 @@ const gameMan = new GameManager();
 gameMan.name = domVars.name;
 gameMan.score = domVars.score;
 
-function showResults() {
+const showResults = () => {
   const res = gameMan.displayScore();
   res.then((finalResponse) => {
     GameManager.renderer(finalResponse, domVars.wrap);
@@ -18,7 +18,7 @@ function showResults() {
   });
 }
 
-function submit() {
+const submit = () => {
   domVars.scan.addEventListener('submit', (e) => {
     e.preventDefault();
     gameMan.addScore(gameMan.name.value, gameMan.score.value);
