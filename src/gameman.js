@@ -21,19 +21,19 @@ export default class GameManager {
   }
 
    displayScore = async () => {
-    const response = await fetch(this.gameUrl, {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-    const finalResponse = await response.json();
-    if (response.status === 200) {
-      return finalResponse;
-    }
-    return null;
-  }
+     const response = await fetch(this.gameUrl, {
+       method: 'GET',
+       mode: 'cors',
+       headers: {
+         'Content-Type': 'application/json',
+       },
+     });
+     const finalResponse = await response.json();
+     if (response.status === 200) {
+       return finalResponse;
+     }
+     return null;
+   }
 
   static renderer = (data, container) => {
     let parent = '';

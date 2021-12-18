@@ -16,7 +16,7 @@ const showResults = () => {
       window.location.reload();
     });
   });
-}
+};
 
 const submit = () => {
   domVars.scan.addEventListener('submit', (e) => {
@@ -26,7 +26,7 @@ const submit = () => {
     gameMan.score.value = '';
     showResults();
   });
-}
+};
 
 window.onload = () => {
   showResults();
