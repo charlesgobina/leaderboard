@@ -40,7 +40,7 @@ export default class GameManager {
     data.result.forEach((resu) => {
       parent += `
       <li>
-        <span>${resu.user} :</span>
+        <span>${resu.user}</span>
         <span>${resu.score}</span>
       </li>
       `;

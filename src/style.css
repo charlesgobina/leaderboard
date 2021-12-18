@@ -1,6 +1,16 @@
+body {
+  background-image: url(./assets/dear.png);
+  background-repeat: no-repeat;
+}
 
 h1 {
   text-align: center;
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-weight: 700;
 }
 
 .contain {
@@ -16,35 +26,49 @@ h1 {
     gap: 90px;
     margin-left: 200px;
     margin-right: 200px;
-    justify-content: space-evenly;
-    flex-direction: row;
   }
 }
 
 .rec-head {
   align-items: center;
+  justify-content: center;
 }
 
 .rec-scores {
-  border: 1px solid black;
   width: 100%;
 }
 
 .score-details {
-  margin: 0 auto;
+  margin: 0 auto 0 auto;
+  height: 60vh;
+  overflow-y: scroll;
+  border-radius: 2%;
 }
 
 .score-details li {
-  padding: 10px 0;
-}
-
-.score-details:nth-child(even) {
-  background-color: rgb(156, 156, 156);
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  background: #46a1bd;
+  opacity: 0.8;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  font-size: large;
 }
 
 button[type="button"] {
   height: 20%;
   margin-left: 10px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 15px;
+  font-size: small;
+  background-color: #e5c97f;
+  width: 100px;
+  cursor: pointer;
 }
 
 ul {
@@ -53,24 +77,58 @@ ul {
 
 @media screen and (min-width: 992px) {
   form {
-    width: 40%;
+    width: 50%;
   }
 }
 
 form {
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  padding: 30px;
+  background-color: #46a1bd;
+  border-radius: 4%;
+  opacity: 0.8;
 }
 
-form input[type="text"] {
-  padding: 5px;
+form input {
+  padding: 10px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  font-size: large;
 }
 
 form button[type="submit"] {
   align-self: flex-end;
-  padding: 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 15px;
+  font-size: large;
+  background-color: #e5c97f;
+  width: 100px;
+  cursor: pointer;
 }
 
 .d-flex {
   display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+  color: #46a2bd;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: #46a2bd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #46a2bd;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #46a2bd;
 }
