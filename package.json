@@ -35,6 +35,8 @@
     "xml-loader": "^1.2.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "cors": "^2.8.5",
+    "lodash": "^4.17.21",
+    "xhr2": "^0.2.1"
   }
 }
