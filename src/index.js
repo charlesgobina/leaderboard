@@ -1,7 +1,6 @@
 import './style.css';
 import GameManager from './gameman.js';
 import { domVars } from './domvar.js';
-import dear from './assets/dear.png';
 
 const gameMan = new GameManager();
 
